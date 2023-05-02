@@ -31,7 +31,7 @@ console.log(texto.replace('um', 'uma')) // troca a palavra desejada por outra
 
 console.log(texto.replace(/t/g, 'r')) // ele subtitui a letra t do texto por a letra r (adicionando o g na string, ele faz em todas as letras (se tiver mais de uma))
 
-console.log(texto.length) // na string o length começa no número 1
+console.log(texto.length) // tamanho da string, o length começa no número 1
 
 console.log(texto.slice(3, 7)) // 'recorta' uma posição do texto / se adicionarmos números negativos ele irar fazer a subração do total de letras do texto.
 console.log(texto.slice(-5,-1))
