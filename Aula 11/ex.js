@@ -4,7 +4,7 @@
         const primIndice = nome.indexOf('R');
         const ultIndice = nome.lastIndexOf('o'); // termina em 0
         const ultLetras = nome.slice(-3);
-        const arrayLetra = nome.match(/[a-z,A-Z]/g) 
+        const arrayLetra = nome.match(/[a-z,A-Z]/g) // também pode usar nome.split(' ')
         const letrasMaiu = nome.toLocaleUpperCase()
         const letrasMinus = nome.toLocaleLowerCase()
 
