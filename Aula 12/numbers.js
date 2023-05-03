@@ -2,6 +2,8 @@
 let num1 = 0.7;
 let num2 = 0.1;
 
+// console.log(100 / 0); isso vai gerar um número infinito, portanto ele é um número
+
 //console.log(num1.toString() + num2) // converte um número para 'string' e toda string concatena com um número
 
 //num1 = num1.toString // desse jeito ele converte definitivamente o num1 para string
