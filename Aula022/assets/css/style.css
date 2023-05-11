@@ -70,12 +70,12 @@ table > thead{
 table{
     margin: 20px 0;
     border: 1px solid var(--cor4);
+    width: 100%;
 }
 
 table, th, td{
     border-collapse: collapse;
     padding: 10px;
-    width: 600px;
 }
 
 .dir{
@@ -88,4 +88,17 @@ table, th, td{
 
 table > tbody > tr:nth-child(odd){
     background:#f2f2f2;
+}
+
+h2{
+    margin-bottom:13px ;
+}
+
+.result{
+    background-color: var(--cor4);
+    color: var(--cor2);
+    height: 35px;
+    padding-left: 5px;
+    padding-top: 2px;
+    display: none;
 }
