@@ -39,7 +39,7 @@ function mostrarHora() {
 
     const diaSemana = mostrarDiaSemana(dataAtual.getDay());
 
-    const dataMes = mostrarDiaMes(dataAtual.getMonth());
+    //const dataMes = mostrarDiaMes(dataAtual.getMonth());
 
     const dia = String(dataAtual.getDate()).padStart(2, '0'); //adiciona um 0 a esquerda (quando necessário)
     const ano = dataAtual.getFullYear();
