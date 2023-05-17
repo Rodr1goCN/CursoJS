@@ -1,3 +1,5 @@
+//CRIA DIV E OUTRAS SUBCLASSES DENTRO DA DIV
+
 const sectionContainer = document.querySelector('.container'); //seleciona dentro do body a 'section' com a class .container
 
 const divNova = document.createElement('div'); //cria uma div
