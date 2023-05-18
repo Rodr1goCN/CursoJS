@@ -16,5 +16,7 @@ for (let valor of nome){
 
 
 // for clássico - Geralmente com iteráveis (array ou strings)
+
 // for in - Retorna o índice ou chave (array, strings ou objetos)
+
 // for of - Retorna o valor em si (iteráveis, arrays ou strings)
