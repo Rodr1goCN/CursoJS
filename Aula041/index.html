@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA DE TAREFAS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: blanchedalmond;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin: 30px auto;
+            padding: 12px;
+            box-shadow: 1px 1px 3px 1px #00000032;
+        }
+
+        .nova-tarefa,
+        .btna-tarefa {
+            margin-top: 20px;
+        }
+
+        .nova-tarefa {
+            height: 26.86px;
+        }
+
+        .btn-tarefa, .apagar {
+            padding: 4px;
+        }
+
+        .tarefas{
+            margin: 30px 0 0 30px;
+        }
+
+        li{
+            margin: 8px 0 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <h1>LISTA DE TAREFAS</h1>
+
+        <input type="text" class="nova-tarefa">
+        <button class="btn-tarefa">Adicionar Tarefa</button>
+
+        <ul class="tarefas"></ul>
+    </section>
+    <script src="ex001.js"></script>
+</body>
+
+</html>
