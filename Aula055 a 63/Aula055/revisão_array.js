@@ -19,7 +19,7 @@ console.log('#########');
 
 
 const nomes3 = ['João', 'Maria', 'Joana', 'Roberto'];
-const removido = nomes3.pop(); 
+const removido = nomes3.pop(); //remove o último elemento de uma array
 const primeiro = nomes3.shift();//Shift() desloca a Maria para o índice 0, retirando o João
 const adicionar = nomes3.push('Costa')//adiciona no final da array um ítem
 const adicionarComeco = nomes3.unshift('Silva')//adiciona no começo da array um ítem
