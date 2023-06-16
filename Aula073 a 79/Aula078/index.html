@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: blanchedalmond;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin: 30px auto;
+            padding: 12px;
+            box-shadow: 1px 1px 3px 1px #00000032;
+        }
+
+        h1 {
+            font-size: 31.5px;
+            text-align: center;
+        }
+
+        ul {
+            font-size: 19px;
+            margin: 5px 0;
+        }
+
+        ul>li,
+        ul {
+            list-style: none;
+        }
+
+        form input,
+        form label,
+        form button {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        form input {
+            font-size: 24px;
+            height: 50px;
+            padding: 0 20px;
+        }
+
+        form button {
+            border: 1.5px rgba(0, 0, 0, 0.288) solid;
+            display: flex;
+            background: rgb(252, 237, 215);
+            color: #000000;
+            font-size: 18px;
+            font-weight: 700;
+            height: 50px;
+            cursor: pointer;
+            margin-top: 30px;
+            align-content: space-around;
+            justify-content: center;
+        }
+
+        .error-text{
+            font-size: 12.5px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <h1>Formulário de cadastro</h1>
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Usuário só poderá conter letras e/ou números</li>
+            <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+            <li>Senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+        <form action="/" method="post" class="formulario">
+            <label for="">Nome</label>
+            <input type="text" class="nome validar">
+            <label for="">Sobrenome</label>
+            <input type="text" class="sobrenome validar">
+            <label for="">CPF</label>
+            <input type="text" class="cpf validar">
+            <label for="">Usuário</label>
+            <input type="text" class="usuario validar">
+            <label for="">Senha</label>
+            <input type="password" class="senha validar">
+            <label for="">Repetir Senha</label>
+            <input type="password" class="repetir_senha validar">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <script src="ValidaCPF.js"></script>
+    <script src="Ex_validando_formulário_class.js"></script>
+</body>
+
+</html>
