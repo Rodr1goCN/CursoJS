@@ -1,5 +1,5 @@
 //promessas 
-/*  */
+
 function numAleatório(min, max) {
     min *= 1000;
     max *= 1000;
