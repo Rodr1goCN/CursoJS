@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":"AAGAA,QAAQC,IAAI","sources":["webpack://aula086/./src/index.js"],"sourcesContent":["//\r\n//\r\n//\r\nconsole.log('ola mundo')"],"names":["console","log"],"sourceRoot":""}
