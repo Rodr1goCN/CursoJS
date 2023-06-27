@@ -16,17 +16,15 @@ body {
     margin: 30px auto;
     padding: 12px;
     box-shadow: 1px 1px 3px 1px #00000032;
+    text-align: center;
 }
 
-.relogio{
-    margin: 10px;
-    font-size: 50px;
-}
-
-.iniciar, .pausar, .zerar{
-    padding: 3px;
-}
-
-.pausado{
+.resultado{
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 2.5rem;
     color: red;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.148);
+    border: 1px rgba(0, 0, 0, 0.415) solid;
 }
