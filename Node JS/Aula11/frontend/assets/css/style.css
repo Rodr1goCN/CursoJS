@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 700px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 12px;
+    box-shadow: 1px 1px 3px 1px #00000032;
+    text-align: center;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.resultado{
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 3rem;
+    color: red;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.148);
+    border: 1px rgba(0, 0, 0, 0.415) solid;
+    letter-spacing: 1.5px;
+}
