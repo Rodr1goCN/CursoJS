@@ -1,0 +1,17 @@
+<%- include('includes/head') %>
+<body>
+    <section class="container">
+        <h1>
+            <!--<%= titulo%> Não da pra formatar usando css -->
+
+            <!-- <%- titulo%> consegue formatar usando css -->
+
+            <%= umaVariavelQualquer %> 
+        </h1>
+        <form action="/" method="post">
+            <label class="cli">Cliente: </label>
+            <input type="text" name="cliente" id="">
+            <button>Submit</button>
+        </form>
+    </section>
+    <%- include('includes/footer') %>
