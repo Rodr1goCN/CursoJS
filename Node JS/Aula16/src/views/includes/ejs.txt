@@ -1,0 +1,30 @@
+<% Controle de fluxo (if, for...) %> 
+<% = Não da pra formatar usando css %> 
+<% - consegue formatar usando css %> 
+<%# Comentário%> 
+<% - include('caminho/arquivo'); %> 
+
+exemplo:
+
+
+<!-- <% numeros.forEach(num => {%>
+                <%= num %> <br>
+                <% });%> -->
+
+
+
+<!-- <% for( let i=0; i < numeros.length; i++){%>
+                <%= numeros[i] %>
+                <% } %> -->
+
+
+
+<!-- <% if(typeof titulo !=='undefined' ){ %>
+                <%= titulo %>
+                    <%}else{ %>
+                        O título não foi enviado.
+                        <% } %> -->
+
+
+
+<%= umaVariavelQualquer %> 
