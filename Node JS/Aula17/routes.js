@@ -21,6 +21,8 @@ route.get('/contato', contatoController.paginaInicial); */
 //rotas de login
 route.get('/login/index', loginController.index);
 route.post('/login/register', loginController.register);
+route.post('/login/index', loginController.login);
+route.get('/login/logout', loginController.logout);
 
 module.exports = route;
 
