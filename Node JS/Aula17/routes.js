@@ -1,28 +1,24 @@
 const express = require('express');
 const route = express.Router();
 const homeController = require('./src/controllers/homercontroller');
-const loginController = require('./src/controllers/loginController')
+const loginController = require('./src/controllers/loginController');
+const contatoController = require('./src/controllers/contatoController');
 
-/* function meuMiddlewares(req, res, next) { //next seria a próxima requesição a ser chamada
-    req.session = {nome: 'Rodrigo', sobrenome: 'Costa' }
-    console.log();
-    console.log('passei no seu middleware');
-    console.log();
-    next();
-} */
+const { loginRequired } = require('./src/middlewares/middlewares')
 
 //rotas da home
 route.get('/', homeController.index);
-/* route.post('/', homeController.trataPost);
-
-//rotas de contato
-route.get('/contato', contatoController.paginaInicial); */
 
 //rotas de login
 route.get('/login/index', loginController.index);
 route.post('/login/register', loginController.register);
 route.post('/login/index', loginController.login);
 route.get('/login/logout', loginController.logout);
+
+//rotas de contato
+route.get('/contato/index', loginRequired, contatoController.index);
+route.post('/contato/register', loginRequired, contatoController.register);
+route.get('/contato/index/:id', loginRequired, contatoController.editIndex);
 
 module.exports = route;
 
