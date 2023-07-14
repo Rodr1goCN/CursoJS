@@ -33,7 +33,6 @@ exports.editIndex = async function (requesicao, resposta) {
     if (!contato) return resposta.render('404')
 
     resposta.render('contato', { contato });
-
 }
 
 exports.edit = async function (req, res) {
@@ -55,5 +54,14 @@ exports.edit = async function (req, res) {
         console.log(e);
         res.render('404')
     }
+}
 
+exports.delete = async function (requesicao, resposta){
+    if (!requesicao.params.id) return resposta.render('404');
+
+    const contato = await Contato.delete(requesicao.params.id);
+    if (!contato) return resposta.render('404')
+
+    requesicao.flash('success', 'Contato apagado com sucesso.');
+    requesicao.session.save(() => resposta.redirect(`/`));
 }
