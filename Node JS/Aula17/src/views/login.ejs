@@ -11,7 +11,7 @@
                     <%- include('includes/messages') %>
                     <div class="row">
 
-                        <div class="col-lg">
+                        <div class="col-lg my-5">
                             <h4>Faça o seu cadastro</h4>
                             <small>
                                 <p>Se você <span style="color: red; font-weight: bolder;">não</span> tiver conta, preencha os campos abaixo e clique em criar conta.</p>
@@ -29,12 +29,12 @@
                                 <button type="submit" class="btn btn-primary">Criar conta</button>
                               </form>
                         </div>
-                        <div class="col-lg">
+                        <div class="col-lg my-5">
                             <h4>Entrar no sistema</h4>
                             <small>
                                 <p>Se você já tiver conta, preencha os campos abaixo e clique em entrar.</p>
                             </small>
-                            <form accept="/login/login" method="POST">
+                            <form class="form-login" accept="/login/login" method="POST">
                                 <input type="hidden" name="_csrf" value="<%=csrfToken %>">
                                 <div class="form-group">
                                   <label >Seu e-mail</label>
