@@ -15,7 +15,7 @@ route.post('/login/register', loginController.register);
 route.post('/login/index', loginController.login);
 route.get('/login/logout', loginController.logout);
 
-//rotas de contato
+//rotas de contatos
 route.get('/contato/index', loginRequired, contatoController.index);
 route.post('/contato/register', loginRequired, contatoController.register);
 route.get('/contato/index/:id', loginRequired, contatoController.editIndex);
