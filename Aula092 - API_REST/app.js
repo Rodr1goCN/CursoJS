@@ -2,6 +2,12 @@
 // se não tivesse uma regra no .eslintrc.js dava para usar o comando abaixo.
 console.log(teste); //eslint-disable-line */
 
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+import './src/database';
+
 import express from 'express';
 import homeRoutes from './src/routes/homeRoutes';
 
