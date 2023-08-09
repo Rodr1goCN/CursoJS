@@ -1,23 +1,20 @@
-* {
+
+*{
   margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
 }
 
-:root {
-  --cor1: #FCFC77;
-  --cor2: #66D978;
-  --cor3: #7DE0F0;
-  --cor4: #817CDA;
-  --cor5: #FC77FC;
+:root{
+  --cor1: #F5E098;
+  --cor2: #FCC679;
+  --cor3: #E69C7A;
+  --cor4: #FC7F79;
+  --cor5: #F274D8;
 }
 
-body {
-  font-family: sans-serif;
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: var(--cor3);
-}
-
-button{
-  cursor: pointer;
 }

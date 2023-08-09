@@ -10,10 +10,10 @@ module.exports = {
   quoteProps: 'as-needed',
   requirePragma: false,
   semi: true,
-  singleQuote: true,
+  singleQuote: false,
   tabWidth: 2,
   trailingComma: 'all',
   useTabs: false,
   vueIndentScriptAndStyle: false,
   embeddedLanguageFormatting: 'off',
-};
+}

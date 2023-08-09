@@ -1,13 +1,10 @@
 import React from "react";
-import './App.css';
+import Main from "./components/Main";
+import "./App.css";
 
 export default function App() {
-  return (
-    <div>
-      <h1>Olá Mundo!</h1>
-      <p>Lorem</p>
-    </div>
-  );
+  return <Main />;
 }
 
-// tambem podemos exportar por aqui (export default App;)
+// export default App;
+// Também podemos usar o 'export default App;' separado do function App()

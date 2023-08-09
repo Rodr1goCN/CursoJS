@@ -30,9 +30,15 @@ module.exports = {
     },
   },
   rules: {
+    "no-unused-vars": 'off',
+    'react/react-in-jsx-scope': 'off',
     'react/jsx-filename-extension': 0,
     'react/state-in-constructor': 0,
     'react/forbid-prop-types': 0,
-    'linebreak-style': ['error', 'windows'],
+    'react/prefer-stateless-function': 0,
+    quotes: 0,
+    'comma-dangle': 0,
+    'no-multiple-empty-lines': 0,
+
   },
 };
