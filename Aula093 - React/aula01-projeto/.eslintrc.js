@@ -36,9 +36,9 @@ module.exports = {
     'react/state-in-constructor': 0,
     'react/forbid-prop-types': 0,
     'react/prefer-stateless-function': 0,
-    quotes: 0,
     'comma-dangle': 0,
     'no-multiple-empty-lines': 0,
+    "react/jsx-key": 0,
 
   },
 };
