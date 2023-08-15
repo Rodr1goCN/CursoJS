@@ -30,5 +30,6 @@ module.exports = {
     'no-empty-function': 'off',
     camelcase: 'off',
     'max-len': 'off',
+    'import/no-unresolved': 'off',
   },
 };
