@@ -11,7 +11,7 @@ router.get('/:id', userController.show); // Lista usuário
 
 router.post('/', loginRequired, userController.store); // Criação de usuário
 router.put('/', loginRequired, userController.update); // Atualização de usuário
-router.delete('/', loginRequired, userController.delete); // Deletar usuário
+router.delete('/:id', loginRequired, userController.delete); // Deletar usuário
 
 export default router;
 
@@ -21,4 +21,5 @@ export default router;
 // delete => apaga um usuário => DELETE
 // show => mostra um usuário => GET
 // update => atualiza um usuário => PATCH ou PUT
+loginRequired,
 */
