@@ -1,4 +1,3 @@
-/** @type {import('sequelize-cli').Migration} */
 const bcryptjs = require('bcryptjs');
 
 module.exports = {

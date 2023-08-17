@@ -2,7 +2,7 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('fotos', {
       id: {
-        type: Sequelize.INTEGER.UNSIGNED,
+        type: Sequelize.INTEGER,
         allowNull: false,
         autoIncrement: true, // Não precisa enviar o id, começa a contar do 1, 2, 3 e etc
         primaryKey: true,

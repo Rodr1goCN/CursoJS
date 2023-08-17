@@ -62,18 +62,20 @@ class UserController {
   // DELETE
   async delete(req, res) {
     try {
-      const usuario = await User.findByPk(req.userId); // findByPk = encontrar pela primary key
+      const user = await User.findByPk(req.params.id);
 
-      if (!usuario) {
+      if (!user) {
         return res.status(400).json({
-          errors: ['Usuário não existe.'],
+          errors: ['Usuário não existe'],
         });
       }
 
-      await usuario.destroy();
-
-      return res.json(null);
+      await user.destroy();
+      return res.json({
+        apagado: true,
+      });
     } catch (e) {
+      console.log('Error deleting user', e);
       return res.status(400).json({
         errors: e.errors.map((err) => err.message),
       });

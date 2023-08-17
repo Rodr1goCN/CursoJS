@@ -21,5 +21,4 @@ export default router;
 // delete => apaga um usuário => DELETE
 // show => mostra um usuário => GET
 // update => atualiza um usuário => PATCH ou PUT
-loginRequired,
 */
