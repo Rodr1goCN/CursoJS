@@ -19,8 +19,7 @@ import alunoRoutes from './routes/alunoRoutes';
 import fotoRoutes from './routes/fotoRoutes';
 
 const whiteList = [
-  'http://localhost:3001',
-  'http://192.168.10.19:3001',
+  'https://pt.wikipedia.org/',
 ];
 
 const corsOptions = {
