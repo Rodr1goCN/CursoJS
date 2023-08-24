@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import { primaryColor, primaryDarkColor } from '../config/colors';
 
 export default createGlobalStyle`
 *{
@@ -9,13 +10,18 @@ export default createGlobalStyle`
 }
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: antiquewhite;
+  background-color: ${primaryDarkColor};
 }
 html, body, #root{
   height: 100%;
 }
 button{
   cursor: pointer;
+  background: ${primaryColor};
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: 700;
 }
 a{
   text-decoration: none;
