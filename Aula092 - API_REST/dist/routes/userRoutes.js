@@ -11,7 +11,7 @@ router.get('/:id', _userController2.default.show); // Lista usuário
 
 router.post('/', _loginRequired2.default, _userController2.default.store); // Criação de usuário
 router.put('/', _loginRequired2.default, _userController2.default.update); // Atualização de usuário
-router.delete('/', _loginRequired2.default, _userController2.default.delete); // Deletar usuário
+router.delete('/:id', _loginRequired2.default, _userController2.default.delete); // Deletar usuário
 
 exports. default = router;
 
