@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 
 import { Container } from '../../styles/GlobalStyles';
 import { Title, Paragrafo } from './styled';
+import * as examplesActions from '../../store/modules/example/action';
 
 /* import axios from '../../services/axios'; */
 
@@ -21,9 +22,7 @@ export default function Login() {
 
   function handleClick(e) {
     e.preventDefault();
-    dispatch({
-      type: 'BOTAO_CLICADO', // Pode disparar quantos eventos quiser, adicionando outros dispatch
-    });
+    dispatch(examplesActions.clicaBotaoRequest());
   }
   return (
     <Container>

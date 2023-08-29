@@ -4,3 +4,6 @@
 }
 
 -> ação -> reducer -> newState = state -> newState
+
+                  SAGA
+ação (request) -> saga -> reducer -> sucesso/falha
