@@ -2,7 +2,6 @@ import styled, { createGlobalStyle } from 'styled-components';
 import * as colors from '../config/colors';
 import 'react-toastify/dist/ReactToastify.css';
 
-export const FaUserCircle = styled.img``;
 export default createGlobalStyle`
 *{
   margin: 0;
@@ -24,6 +23,12 @@ button{
   padding: 5px;
   border-radius: 4px;
   font-weight: 700;
+  color: whitesmoke;
+  transition: all 400ms;
+  margin-top: 5px;
+}
+button:hover{
+filter: brightness(80%);
 }
 a{
   text-decoration: none;
