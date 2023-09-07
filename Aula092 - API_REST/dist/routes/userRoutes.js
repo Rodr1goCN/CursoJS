@@ -9,7 +9,7 @@ const router = new (0, _express.Router)();
 router.get('/', _userController2.default.index); // Lista usuários
 router.get('/:id', _userController2.default.show); // Lista usuário
 
-router.post('/', _loginRequired2.default, _userController2.default.store); // Criação de usuário
+router.post('/', _userController2.default.store); // Criação de usuário
 router.put('/', _loginRequired2.default, _userController2.default.update); // Atualização de usuário
 router.delete('/:id', _loginRequired2.default, _userController2.default.delete); // Deletar usuário
 

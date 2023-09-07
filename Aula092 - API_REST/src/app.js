@@ -10,6 +10,7 @@ dotenv.config();
 import './database';
 import cors from 'cors';
 import helmet from 'helmet';
+import delay from 'express-delay';
 
 import express from 'express';
 import homeRoutes from './routes/homeRoutes';
@@ -21,8 +22,8 @@ import fotoRoutes from './routes/fotoRoutes';
 const whiteList = [
   'http://localhost:3000',
   'http://localhost:3001',
-  'http://192.168.10.19',
-  'https://pt.wikipedia.org/',
+  'http://192.168.10.19:3000',
+  'http://192.168.10.19:3001',
 ];
 
 const corsOptions = {
@@ -45,6 +46,7 @@ class App {
   middlewares() {
     this.app.use(cors(corsOptions));
     this.app.use(helmet());
+    this.app.use(delay(2000));
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
     this.app.use('/images/', express.static(resolve(__dirname, '..', 'uploads', 'images')));
