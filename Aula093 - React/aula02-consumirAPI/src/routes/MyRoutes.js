@@ -3,7 +3,7 @@ import { Route, Redirect } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 import { useSelector } from 'react-redux';
 
-// eslint-disable-next-line react/prop-types
+
 export default function MyRoute({ component: Component, isClosed, ...rest }) {
   const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
 
@@ -22,8 +22,8 @@ MyRoute.defaultProps = {
   isClosed: false,
 };
 
-// eslint-disable-next-line react/no-typos
-MyRoute.PropTypes = {
+
+MyRoute.propTypes = {
   component: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
     .isRequired,
   isClosed: PropTypes.bool,
