@@ -20,7 +20,7 @@ input {
     margin-top: 5px;
 
     &:focus { // & (próprio elemento)
-        border: 1px solid ${colors.primaryColor};
+        border: 2px solid ${colors.primaryColor};
     }
 }
 

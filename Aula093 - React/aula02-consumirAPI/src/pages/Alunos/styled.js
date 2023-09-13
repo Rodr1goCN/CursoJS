@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const AlunoContainer = styled.div`
 margin-top: 10px;
@@ -20,3 +21,8 @@ img {
     height: 36px;
     border-radius: 50%;
 }`;
+
+export const NovoAluno = styled(Link)`
+display: block;
+padding: 15px 0 10px 10px;
+`;
