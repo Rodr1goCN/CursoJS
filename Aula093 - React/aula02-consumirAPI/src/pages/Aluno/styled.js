@@ -41,10 +41,10 @@ a{
     justify-content: center;
     border: none;
     position: absolute;
-    bottom: -3px;
+    bottom: -2px;
     color: white;
-    width: 33px;
-    height: 33px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 }
 `;
