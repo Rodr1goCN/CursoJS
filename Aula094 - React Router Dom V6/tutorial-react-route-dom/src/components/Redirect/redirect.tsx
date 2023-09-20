@@ -14,7 +14,11 @@ export const Redirect = () => {
         setTime((t) => t - 1);
 
         if(time <= 0){
-            navigate('/about') /* Redirecionamento de páginas */
+            navigate('/about', {
+                state: `This is the state: ${Math.random()}`,
+                replace: true, // Não permite que volte para página anterior, quando é redirecionado
+                
+            }) /* Redirecionamento de páginas */
         }
        }, 1000) /* 1000 milisegundos = 1 segundo */
 
