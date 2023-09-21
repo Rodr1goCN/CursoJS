@@ -4,6 +4,6 @@ Seu amigo mais próximo, Pedro, sempre o admirava por sua generosidade e empatia
 
 João conheceu Maria, uma mulher igualmente compassiva, e os dois se apaixonaram profundamente. Juntos, construíram uma família sólida e criaram seus filhos com os mesmos valores que os guiaram ao longo da vida.
 
-Hoje em dia, a memória de João perdura na cidade, e seu nome é frequentemente associado à compaixão e solidariedade. Sua influência positiva continua a inspirar as gerações futuras, deixando um legado de bondade que jamais será esquecido.`
+Hoje em dia, a memória de joão perdura na cidade, e seu nome é frequentemente associado à compaixão e solidariedade. Sua influência positiva continua a inspirar as gerações futuras, deixando um legado de bondade que jamais será esquecido.`
 
 module.exports = { texto }

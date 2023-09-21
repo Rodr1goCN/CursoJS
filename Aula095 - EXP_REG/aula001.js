@@ -2,6 +2,9 @@
 // i - insensitive (não tem diferença entre letras (pode ser maiúscula ou minúscula))
 // () - Podemos separar por grupos
 // | - Ou
+//   $1    $2    $3 
+// (...) (...) (...) - também podemos representar os GRUPOS por $1 $2 $3 e se tiver parênteses dentro de parentes a ordem vai ser mantida por parênteses. 
+//ex: (...$1 ($2 ($3) ) ) 
 
 const { texto } = require('./base_aula1');
 
