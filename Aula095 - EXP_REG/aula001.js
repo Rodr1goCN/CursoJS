@@ -6,7 +6,7 @@
 // (...) (...) (...) - também podemos representar os GRUPOS por $1 $2 $3 e se tiver parênteses dentro de parentes a ordem vai ser mantida por parênteses. 
 //ex: (...$1 ($2 ($3) ) ) 
 
-const { texto } = require('./base_aula1');
+const { texto } = require('./base_aula');
 
 const regExp1 = /(Pedro, |Maria, |joão, )(sempre o admirava por sua generosidade e empatia)/i;
 const encontrado = regExp1.exec(texto)

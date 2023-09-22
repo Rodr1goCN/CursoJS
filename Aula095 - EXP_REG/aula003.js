@@ -1,4 +1,4 @@
-const { texto, arquivos } = require('./base_aula1');
+const { texto, arquivos } = require('./base_aula');
 
 // Quantificadores
 

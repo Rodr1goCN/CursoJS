@@ -1,4 +1,4 @@
-const { texto } = require('./base_aula1');
+const { texto } = require('./base_aula');
 const regExp1 = /João|Pedro|Maria/ig;
 
 /* console.log(texto.match(regExp1));
