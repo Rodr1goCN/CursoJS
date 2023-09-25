@@ -1,3 +1,4 @@
+//                 EXPRESSÕES REGULARES
 const texto = `João era um homem de princípios sólidos, cuja bondade era conhecida por todos na pequena cidade de Santa Clara. Ele era filho de Maria e José, nomes que também eram respeitados na comunidade. Desde jovem, João demonstrava uma paixão por ajudar os outros.
 
 Seu amigo mais próximo, Pedro, sempre o admirava por sua generosidade e empatia. João também tinha uma irmã, Ana, que compartilhava seu espírito altruísta. Eles frequentemente se uniam para realizar obras de caridade na cidade.
@@ -22,4 +23,6 @@ const arquivos = [
 //            <*>    *    </*> <*>        *        </*> 
 const html = '<p>Olá mundo</p> <p>Olá mundo de novo</p>';
 
-module.exports = { texto, arquivos, html };
+const alfabeto = 'abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ atenção 0123456789 ! § ©'
+
+module.exports = { texto, arquivos, html, alfabeto };

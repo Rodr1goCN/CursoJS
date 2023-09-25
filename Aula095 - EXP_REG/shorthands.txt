@@ -1,0 +1,31 @@
+Shorthands Expressões Regulares
+
+PS: Pode ficar dentro do [] ou não;
+
+\d - Encontra correspondência com um número. Equivalente a [0-9].
+
+Por exemplo, /\d/ ou /[0-9]/ encontra correspondente '8' em "Dróide BB8".
+
+
+
+\D - Encontra correspondência com um caractere que não seja número. Equivalente a [^0-9].
+
+Por exemplo, /\D/ ou /[^0-9]/ econtra correspondente 'C' em "C3 está ativada."
+
+
+
+\w - Encontra correspondência de qualquer caractere alfanumérico incluindo underline. Equivalente a [A-Za-z0-9_].
+
+Por exemplo, /\w/ encontra correspondente 'a' em "apple," '5' em "$5.28," e '3' em "3D."
+
+
+
+\W - Encontra correspondência em um não caractere. Equivalente a [^A-Za-z0-9_].
+
+Por exemplo, /\W/ ou /[^A-Za-z0-9_]/ encontra correspondente '%' em "50%."
+
+
+
+\s - Encontra correspondência com um único caractere de espaço em branco, espaço, tabulação, avanço de página, quebra de linha. Equivalente a [ \f\n\r\t\v\u00A0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u2028\u2029\u202f\u205f\u3000].
+
+Por exemplo, /\s\w*/ encontra correspondente ' bar' em "foo bar."
