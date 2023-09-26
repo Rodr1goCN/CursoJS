@@ -18,11 +18,30 @@ const arquivos = [
     'Meu gatinho.JPEeeeeeeeEEeeeeEG',
     'Marido.png',
     'Lista de compras.txt',
-]
+];
+
+const cpfs = `os CPFs são: 123.456.789-78 087.792.246-46 547.123.456-39 55-22.555-11
+
+
+977.561.780-00`
+
+const ips = `Os ips são: 
+0.0.0.0
+255.255.255.255
+10.10.5.12
+10.10.10-5`
+
+const ceps = `
+    Os CEPs são:
+    29130276 29168-125
+    28-140-85 14785b-552
+    25265-89545265-123
+`;
+
 
 //            <*>    *    </*> <*>        *        </*> 
 const html = '<p>Olá mundo</p> <p>Olá mundo de novo</p>';
 
 const alfabeto = 'abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ atenção 0123456789 ! § ©'
 
-module.exports = { texto, arquivos, html, alfabeto };
+module.exports = { texto, arquivos, html, alfabeto, ips, cpfs, ceps };
