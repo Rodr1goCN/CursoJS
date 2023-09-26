@@ -45,7 +45,12 @@ const ceps = `
 
 //            <*>    *    </*> <*>        *        </*> 
 const html = '<p>Olá mundo</p> <p>Olá mundo de novo</p>';
+const html2 = `<p 
+data-ref="teste" 
+classname="novo">
+Olá mundo
+</p> <p>Olá mundo</p> <div>Olá mundo de novo</div>`;
 
 const alfabeto = 'abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ atenção 0123456789 ! § ©'
 
-module.exports = { texto, arquivos, html, alfabeto, ips, cpfs, ceps };
+module.exports = { texto, arquivos, html, alfabeto, ips, cpfs, ceps, html2 };
