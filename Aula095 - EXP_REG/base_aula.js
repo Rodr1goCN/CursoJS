@@ -53,4 +53,15 @@ Olá mundo
 
 const alfabeto = 'abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ atenção 0123456789 ! § ©'
 
-module.exports = { texto, arquivos, html, alfabeto, ips, cpfs, ceps, html2 };
+const lookahead = `
+ONLINE 192.168.0.1 ABCDF inactive
+OFFLINE 192.168.0.2 ABCDF active
+ONLINE 192.168.0.3 ABCDF active
+OFFLINE 192.168.0.4 ABCDF active
+ONLINE 192.168.0.5 ABCDF active
+ONLINE 192.168.0.6 ABCDF inactive
+OFFLINE 192.168.0.7 ABCDF inactive
+OFFLINE 192.168.0.8 ABCDF active
+`
+
+module.exports = { texto, arquivos, html, alfabeto, ips, cpfs, ceps, html2, lookahead };
