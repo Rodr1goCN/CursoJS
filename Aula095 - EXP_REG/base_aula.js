@@ -64,4 +64,15 @@ OFFLINE 192.168.0.7 ABCDF inactive
 OFFLINE 192.168.0.8 ABCDF active
 `
 
-module.exports = { texto, arquivos, html, alfabeto, ips, cpfs, ceps, html2, lookahead };
+const palavrasExpReg = `
+Um texto que tem palavras acentuadas e quebras de linhas.
+Atenção, este é um texto para capturar todas as palavras.
+Mesmo que não forem match de \w
+Vamos ver se seremos bem sucedidos.
+`
+
+const naoNumerosExpReg = `
+E mais tarde ele falou o seu CPF: 111.555.444-22, entendeu?
+`
+
+module.exports = { texto, arquivos, html, alfabeto, ips, cpfs, ceps, html2, lookahead, palavrasExpReg, naoNumerosExpReg };
