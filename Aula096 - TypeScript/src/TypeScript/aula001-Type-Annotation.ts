@@ -4,7 +4,7 @@ const nome: string = 'Rodrigo'; // Qualquer tipo de strings: ''  ""  ``
 const idade: number = 38; // 10, 1.57, -5.55, 0xf00d, 0b1010, 0o7474
 const adulto: boolean = true; // True ou false
 const simbolo: symbol = Symbol('qualquer-symbol'); // symbol
-const big: bigint = 10n; // Bigint
+//const big: bigint = 10n; // Bigint
 
 // Arrays
 
