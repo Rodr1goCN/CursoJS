@@ -21,7 +21,7 @@ export function squareOf(x: any) {
   return null;
 }
 
-const squareOfTowNumber = squareOf(2);
+const squareOfTowNumber = squareOf(4);
 const squareOfTowString = squareOf('2');
 
 if (squareOfTowNumber === null) {
