@@ -14,7 +14,6 @@ input.value = 'Qualquer coisa';
 /* Não recomendado */
 // Type assestion
 const body4 = document.querySelector('body') as unknown as number; // Se precisar que o body seja um number, primeiro tem que colocar: as unknown
-body4.style.background = 'red';
 
 // Non-null assertion (!)
 const body2 = document.querySelector('body')!; // Usando o ponto de interrogação informa que o body não pode ser nulo
