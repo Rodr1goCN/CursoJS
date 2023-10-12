@@ -7,11 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:frontend": "webpack -w",
     "build:backend": "tsc"
-    },
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.8.5",
+    "@types/validator": "^13.11.2",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@typescript-eslint/parser": "^6.7.4",
     "eslint": "^8.50.0",
@@ -23,5 +25,8 @@
     "typescript": "^5.2.2",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "validator": "^13.11.0"
   }
 }
