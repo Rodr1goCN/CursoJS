@@ -19,6 +19,7 @@
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "match": "^1.2.10",
     "prettier": "^3.0.3",
     "ts-loader": "^9.5.0",
     "ts-node": "^10.9.1",
