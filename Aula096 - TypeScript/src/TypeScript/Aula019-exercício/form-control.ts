@@ -32,7 +32,7 @@ function clearErrorMessages(form: HTMLFormElement): void {
   form
     .querySelectorAll('.' + SHOW_ERROR_MESSAGES)
     .forEach((item) => item.classList.remove(SHOW_ERROR_MESSAGES));
-  // Remove a mensagem de erro
+  // Remove a mensagem de erro previamente exibidas em um formulário HTML
 }
 
 function checkPasswords(password: HTMLInputElement, password2: HTMLInputElement) {
