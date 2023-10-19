@@ -1,4 +1,5 @@
 export class Pessoa {
+  // Super classe
   constructor(
     public nome: string,
     public sobrenome: string,
@@ -20,11 +21,13 @@ export class Pessoa {
 }
 
 export class Aluno extends Pessoa {
+  // Sub classe
   getNomecompleto(): string {
     return 'Isso vem do aluno: ' + this.nome + ' ' + this.sobrenome;
   }
 }
 export class Cliente extends Pessoa {
+  // Sub classe
   getNomecompleto(): string {
     return 'Isso vem do cliente: ' + this.nome + ' ' + this.sobrenome;
   }
