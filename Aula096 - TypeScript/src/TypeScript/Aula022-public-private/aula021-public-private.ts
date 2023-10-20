@@ -1,6 +1,6 @@
 export class Empresa {
   public readonly nome: string; //public não necessário, pois se não tiver, já se torna public // Public acessível dentro da classe e fora também
-  private readonly colaboradores: Colaborador[] = []; // Se tiver private, não será possível acessar dentro ou fora da classe
+  private readonly colaboradores: Colaborador[] = []; // Se tiver private, só será possível acessar dentro da classe, fora da classe não é possível
   protected readonly cnpj: string;
 
   constructor(nome: string, cnpj: string) {
