@@ -71,3 +71,6 @@ body {
   opacity: 1;
 }
 
+.fullscreen {
+ order: 1;
+}
