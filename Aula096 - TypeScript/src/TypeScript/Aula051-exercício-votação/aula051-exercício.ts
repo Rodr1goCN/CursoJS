@@ -40,20 +40,26 @@ export class AppVotacao {
 }
 
 const votacao1 = new Votacao('Qual sua linguagem de programação favorita?');
-votacao1.adcOpcaoVotacao({ opcao: 'Python', numeroDeVotos: 1 });
-votacao1.adcOpcaoVotacao({ opcao: 'Typescript', numeroDeVotos: 2 });
+votacao1.adcOpcaoVotacao({ opcao: 'Python', numeroDeVotos: 0 });
+votacao1.adcOpcaoVotacao({ opcao: 'Typescript', numeroDeVotos: 0 });
 votacao1.adcOpcaoVotacao({ opcao: 'Javascript', numeroDeVotos: 0 });
 
 const votacao2 = new Votacao('Qual a sua cor preferida?');
 votacao2.adcOpcaoVotacao({ opcao: 'Vermelho', numeroDeVotos: 0 });
-votacao2.adcOpcaoVotacao({ opcao: 'Azul', numeroDeVotos: 2 });
-votacao2.adcOpcaoVotacao({ opcao: 'Verde', numeroDeVotos: 1 });
+votacao2.adcOpcaoVotacao({ opcao: 'Azul', numeroDeVotos: 0 });
+votacao2.adcOpcaoVotacao({ opcao: 'Verde', numeroDeVotos: 0 });
 
 votacao2.voto(1);
 votacao2.voto(1);
 votacao2.voto(2);
 votacao2.voto(1);
 votacao2.voto(0);
+
+votacao1.voto(2);
+votacao1.voto(0);
+votacao1.voto(2);
+votacao1.voto(1);
+votacao1.voto(2);
 
 const appVotacao = new AppVotacao();
 appVotacao.adcVotacao(votacao1);
