@@ -19,5 +19,3 @@ console.log(pessoaDoNamespace);
 console.log(MeuNamespace.OutroNamespace.nomeDoNamespace);
 
 console.log(MeuNamespace.nomeDoNamespace);
-
-export default 1;
