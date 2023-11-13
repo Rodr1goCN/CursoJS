@@ -21,6 +21,8 @@ var pessoaDoNamespace = new MeuNamespace.PessoaDoNamespace('Rodrigo');
 console.log(pessoaDoNamespace);
 console.log(MeuNamespace.OutroNamespace.nomeDoNamespace);
 console.log(MeuNamespace.nomeDoNamespace);
+var constDoNamespace = 'Valor da const do namespace';
 /* eslint-disable @typescript-eslint/triple-slash-reference */
 /// <reference path="modulo/aula059-namespaces.ts" />
 console.log(MeuNamespace.nomeDoNamespace);
+console.log(constDoNamespace);
