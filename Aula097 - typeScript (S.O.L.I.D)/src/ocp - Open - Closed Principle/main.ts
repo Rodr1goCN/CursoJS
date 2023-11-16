@@ -35,7 +35,7 @@ const thirtyPercentDiscount = new ThirtyPercentDiscount();
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 const noDiscount = new NoDiscount();
 
-const shoppingCart = new ShoppingCart(tenPercentDiscount);
+const shoppingCart = new ShoppingCart(twentyPercentDiscount);
 const messaging = new Messaging();
 const persistency = new Persistency();
 const order = new Order(shoppingCart, messaging, persistency);
