@@ -15,6 +15,7 @@ import {
   FifteenPercentDiscount,
   NoDiscount,
 } from './classes/discount';
+import { EnterpriseCustomer, IndividualCustomer } from './classes/customer';
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 const fiftyPercentDiscount = new FiftyPercentDiscount();
@@ -37,7 +38,12 @@ const noDiscount = new NoDiscount();
 const shoppingCart = new ShoppingCart(twentyPercentDiscount);
 const messaging = new Messaging();
 const persistency = new Persistency();
-const order = new Order(shoppingCart, messaging, persistency);
+
+/* eslint-disable-next-line */
+const individualCustomer = new IndividualCustomer('Rodrigo', 'Costa', '111.111.111-11');
+
+const enterpriseCustomer = new EnterpriseCustomer('Loja Costa', '11.111.111/0001-11');
+const order = new Order(shoppingCart, messaging, persistency, enterpriseCustomer);
 
 shoppingCart.addItem(new Product('Camiseta', 49.99, 'Levis'));
 shoppingCart.addItem(new Product('Short', 39.99, 'Pakalolo'));
