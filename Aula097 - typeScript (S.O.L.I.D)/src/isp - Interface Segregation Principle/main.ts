@@ -1,6 +1,5 @@
 /*
-Open/Closed Principle
-Entidades devem esta abertar para extensão, mas fechadas para modificação.
+Interface Segregation Principle (Princípio da Segregação de Interface) - os clientes não devem ser forçados a depender de interfaces, types ou membros abstratos que não utilizam.
 */
 
 import { Messaging } from './services/messaging';
