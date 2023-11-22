@@ -54,6 +54,7 @@ class MessagingMock implements MessagingProtocol {
   }
 }
 
+/* eslint-disable-next-line */
 const messagingMock = new MessagingMock();
 
 const enterpriseCustomer = new EnterpriseCustomer('Loja Costa', '11.111.111/0001-11');

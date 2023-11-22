@@ -8,7 +8,11 @@ Vantagens:
 - Baixo acoplamento e alta coesão
 - Código expansível (exemplo: aumentar o tamanho do desconto)
 - Separations of concerns (Separação de conceitos)
+- Fácil manutenção
 
 Desvantagens
--
+- Complexidade
+- Quantidade de código digitada aumenta
+- tempo de desenvolvimento aumenta
+- Tenha cuidados com YAGNI (You aren't gonna need it - Você não vai precisar disso), KISS (Keep it simple, stupid - Mantenha seu código simples, mané)
 */
