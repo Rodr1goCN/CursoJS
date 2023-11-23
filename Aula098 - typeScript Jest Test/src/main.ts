@@ -9,7 +9,7 @@ Classes de alto nível são classes qeu gerenciam as classes de baixo nível.
 
 import { Messaging } from './services/messaging';
 import { Order } from './classes/order';
-import { Persistency } from './services/persistency(.)spec';
+import { Persistency } from './services/persistency.spec';
 import { Product } from './classes/product';
 import { ShoppingCart } from './classes/shopping-cart';
 import {
