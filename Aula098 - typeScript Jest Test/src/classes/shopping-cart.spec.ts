@@ -72,6 +72,22 @@ describe('shoppingCart', () => {
     sut.removeItem(0);
     expect(sut.isEmpty()).toBe(true);
   });
+
+  it('should call discount.calculate() once when totalWithDiscount is called', () => {
+    // System Under Test
+    const { sut, discountMock } = createSutWithProducts();
+    const discountMockSpy = jest.spyOn(discountMock, 'calculate');
+    sut.totalWithDiscount();
+    expect(discountMockSpy).toHaveBeenCalledTimes(1);
+  });
+
+  it('should call discount.calculate(price) with totalPrice when totalWithDiscount is called', () => {
+    // System Under Test
+    const { sut, discountMock } = createSutWithProducts();
+    const discountMockSpy = jest.spyOn(discountMock, 'calculate');
+    sut.totalWithDiscount();
+    expect(discountMockSpy).toHaveBeenCalledWith(sut.total());
+  });
 });
 
 // Mock - Objeto que finje que é uma dependência
