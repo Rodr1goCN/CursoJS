@@ -58,6 +58,14 @@ const createSut = () => {
 
 describe('Order', () => {
   it('should not checkout if cart is empty', () => {
+    const { sut, shoppingCartMock } = createSut();
+    const shoppingCartMockSpy = jest.spyOn(shoppingCartMock, 'isEmpty').mockReturnValueOnce(true);
+    sut.checkout();
+    expect(shoppingCartMockSpy).toHaveBeenCalledTimes(1);
+    expect(sut.orderStatus).toBe('open'); // Podemos testar duas coisas aqui: Closed e no mockReturnValueOnce(false) // Open e no mockReturnValueOnce
+  });
+
+  it('should checkout if cart is empty', () => {
     // const order = new Order();
     const { sut, shoppingCartMock } = createSut();
     const shoppingCartMockSpy = jest.spyOn(shoppingCartMock, 'isEmpty').mockReturnValueOnce(false);
