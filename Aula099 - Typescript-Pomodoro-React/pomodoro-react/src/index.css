@@ -7,4 +7,65 @@
 
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #35e0b5;
+  transition: background-color 300ms ease-in-out;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.working {
+  background: #f06b5f;
+}
+
+.hidden {
+  display:  none;
+}
+
+.pomodoro {
+  background: #fff;
+  margin: 50px 20px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.pomodoro h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.pomodoro .timer {
+font-size: 5.5rem;
+text-align: center;
+}
+
+.pomodoro .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pomodoro button {
+  background: #35e0b5;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: black;
+  transition: background-color 300ms ease-in-out;
+  margin: 20px auto;
+}
+
+.working .pomodoro button {
+  background: #f06b5f;
+  color: white;
+}
+
+.pomodoro .details {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-weight: 600;
 }
