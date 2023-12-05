@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useInterval } from '../hook/use-interval';
 import { Button } from './button';
-import { secondsToTime } from '../utils/seconds-to-time';
 import { Timer } from './timer';
+import { secondsToTime } from '../utils/seconds-to-time';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const bellStart = require('../sounds/bell-start.mp3');
@@ -33,6 +33,7 @@ export function PomodoroTimer(props: Props): JSX.Element {
   useInterval(
     () => {
       setMainTime(mainTime - 1); // mainTime sempre vai ser 1 segundo
+      if (working) setFullWorkingTime(fullWorkingTime + 1);
     },
     timeCounting ? 1000 : null,
   );
@@ -45,19 +46,22 @@ export function PomodoroTimer(props: Props): JSX.Element {
     audioStartWorking.play();
   };
 
-  const configureRest = (long: boolean) => {
-    setTimeCounting(true);
-    setWorking(false);
-    setResting(true);
+  const configureRest = useCallback(
+    (long: boolean) => {
+      setTimeCounting(true);
+      setWorking(false);
+      setResting(true);
 
-    if (long) {
-      setMainTime(props.LongRestTime);
-    } else {
-      setMainTime(props.shortRestTime);
-    }
+      if (long) {
+        setMainTime(props.LongRestTime);
+      } else {
+        setMainTime(props.shortRestTime);
+      }
 
-    audioFinishWorking.play();
-  };
+      audioFinishWorking.play();
+    },
+    [setTimeCounting, setWorking, setResting, setMainTime, props.pomodoroTimer],
+  );
 
   useEffect(() => {
     if (working) document.body.classList.add('working');
@@ -90,7 +94,7 @@ export function PomodoroTimer(props: Props): JSX.Element {
 
   return (
     <div className="pomodoro">
-      <h2>You are: WORKING</h2>
+      <h2>Você esta {working ? 'trabalhando' : 'descansando'}</h2>
       <Timer mainTime={mainTime} />
 
       <div className="controls">
