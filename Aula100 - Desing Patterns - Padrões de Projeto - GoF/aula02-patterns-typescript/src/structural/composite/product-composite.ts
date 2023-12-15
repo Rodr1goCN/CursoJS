@@ -54,5 +54,6 @@ const tablet = new ProductLeaf('Tablet', 2_000.88);
 const kindle = new ProductLeaf('Kindle', 350.55);
 const anotherProductBox = new ProductComposite();
 anotherProductBox.add(tablet, kindle);
-console.log(anotherProductBox);
-console.log(anotherProductBox.getPrice().toFixed(2));
+productBox.add(anotherProductBox);
+console.log(productBox);
+console.log(productBox.getPrice().toFixed(2));
